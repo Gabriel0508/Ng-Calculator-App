@@ -1,0 +1,16 @@
+@import "/src/assets/styles/variables";
+
+.mode {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+
+  .form-switch .form-check-input {
+    background-color: $shadow;
+    border: 1px solid $white;
+  }
+  .form-switch .form-check-input:checked {
+    background-color: $light-black;
+  }
+}

@@ -1,0 +1,90 @@
+<main class="calculator">
+  <div class="container">
+    <div class="mb-2">
+      <button class="btn btn-blue me-2" (click)="clearSum('')">
+        C
+      </button>
+      <button class="btn btn-blue me-2" (click)="onDeleteLastKey('')">
+        <i class="fa fa-eraser"></i>
+      </button>
+      <button class="btn btn-blue me-2" (click)="onOperatorPress('%')">
+        %
+      </button>
+      <button class="btn btn-red" (click)="onOperatorPress('/')">
+        /
+      </button>
+    </div>
+
+    <div class="mb-2">
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('7')">
+        7
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('8')">
+        8
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('9')">
+        9
+      </button>
+
+      <button class="btn btn-red" (click)="onOperatorPress('*')">
+        *
+      </button>
+    </div>
+
+    <div class="mb-2">
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('4')">
+        4
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('5')">
+        5
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('6')">
+        6
+      </button>
+
+      <button class="btn btn-red" (click)="onOperatorPress('-')">
+        -
+      </button>
+    </div>
+
+    <div class="mb-2">
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('1')">
+        1
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('2')">
+        2
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('3')">
+        3
+      </button>
+
+      <button class="btn btn-red" (click)="onOperatorPress('+')">
+        +
+      </button>
+    </div>
+
+    <div>
+      <button class="btn btn-light-black me-2">
+        <i class="fa fa-rotate-right"></i>
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('0')">
+        0
+      </button>
+
+      <button class="btn btn-light-black me-2" (click)="onKeyPress('.')">
+        .
+      </button>
+
+      <button class="btn btn-red" (click)="onCalculateSum('')">
+        =
+      </button>
+    </div>
+  </div>
+</main>

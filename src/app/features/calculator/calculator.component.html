@@ -1,0 +1,30 @@
+<main class="bg-dark-blue">
+  <div
+    class="container"
+    [ngClass]="!bgToggle ? 'bg-black text-white' : 'bg-white text-black'"
+  >
+    <div class="mode pt-3">
+      <app-calculator-mode
+        (toggleBackground)="toggleBackground($event)"
+      ></app-calculator-mode>
+    </div>
+
+    <div class="display">
+      <app-calculator-display
+        [calculated]="calculatedSum"
+        [toCalculate]="numToCalculate"
+      ></app-calculator-display>
+    </div>
+
+    <div class="keyboard">
+      <app-calculator-keyboard
+        (keyPress)="keyPress($event)"
+        (operatorPress)="operatorPress($event)"
+        (clearCalculatedSum)="clearAll($event)"
+        (calculateSum)="calculate($event)"
+        (deleteLastKey)="deleteKey($event)"
+      >
+      </app-calculator-keyboard>
+    </div>
+  </div>
+</main>

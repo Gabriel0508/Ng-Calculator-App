@@ -1,0 +1,62 @@
+@import "variables";
+@import "mixins";
+
+.btn,
+.btn-black,
+.btn-light-black {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.btn-black {
+  background-color: $black;
+  color: $white;
+
+  &:hover:enabled {
+    background-color: $light-black;
+    color: $white;
+    border-color: $light-black;
+  }
+}
+
+.btn-light-black {
+  background-color: $light-black;
+  color: $white;
+
+  &:hover:enabled {
+    background-color: $shadow;
+    color: $white;
+    border-color: $light-black;
+  }
+}
+
+.btn-blue {
+  background-color: $light-black;
+  color: $light-blue;
+
+  &:hover:enabled {
+    background-color: $shadow;
+    color: $white;
+    border-color: $light-black;
+  }
+}
+
+.btn-red {
+  background-color: $light-black;
+  color: $red;
+
+  &:hover:enabled {
+    background-color: $shadow;
+    color: $white;
+    border-color: $light-black;
+  }
+}
