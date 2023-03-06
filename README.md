@@ -3,5 +3,7 @@
 ![image](https://user-images.githubusercontent.com/65502252/223201726-9b8066c1-fbe0-4015-bd7f-099e9e28ce39.png)
 
 It is just a small Calculator App which I created from scratch using Bootstrap and Font Awesome to improve my Angular skills (communication between components in Angular). 
-Use - npm install to instal the node_modules
-    - ng serve to start the App
+
+Use:
+- npm install to instal the node_modules
+- ng serve to start the App
