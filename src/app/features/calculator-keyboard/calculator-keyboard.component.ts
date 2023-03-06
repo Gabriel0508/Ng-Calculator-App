@@ -24,8 +24,8 @@ export class CalculatorKeyboardComponent implements OnInit {
     this.operatorPress.emit(operator);
   }
 
-  onCalculateSum(calculate: string): void {
-    this.calculateSum.emit(calculate);
+  onCalculateSum(): void {
+    this.calculateSum.emit();
   }
 
   clearSum(clear: string): void {

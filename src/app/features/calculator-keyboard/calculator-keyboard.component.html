@@ -5,7 +5,7 @@
         C
       </button>
       <button class="btn btn-blue me-2" (click)="onDeleteLastKey('')">
-        <i class="fa fa-eraser"></i>
+        <i class="fa fa-arrow-left"></i>
       </button>
       <button class="btn btn-blue me-2" (click)="onOperatorPress('%')">
         %
@@ -28,9 +28,7 @@
         9
       </button>
 
-      <button class="btn btn-red" (click)="onOperatorPress('*')">
-        *
-      </button>
+      <button class="btn btn-red" (click)="onOperatorPress('*')">*</button>
     </div>
 
     <div class="mb-2">
@@ -46,9 +44,7 @@
         6
       </button>
 
-      <button class="btn btn-red" (click)="onOperatorPress('-')">
-        -
-      </button>
+      <button class="btn btn-red" (click)="onOperatorPress('-')">-</button>
     </div>
 
     <div class="mb-2">
@@ -64,14 +60,12 @@
         3
       </button>
 
-      <button class="btn btn-red" (click)="onOperatorPress('+')">
-        +
-      </button>
+      <button class="btn btn-red" (click)="onOperatorPress('+')">+</button>
     </div>
 
     <div>
-      <button class="btn btn-light-black me-2">
-        <i class="fa fa-rotate-right"></i>
+      <button class="btn btn-light-black me-2" (click)="clearSum('')">
+        <i class="fa fa-rotate-left"></i>
       </button>
 
       <button class="btn btn-light-black me-2" (click)="onKeyPress('0')">
@@ -82,9 +76,7 @@
         .
       </button>
 
-      <button class="btn btn-red" (click)="onCalculateSum('')">
-        =
-      </button>
+      <button class="btn btn-red" (click)="onCalculateSum()">=</button>
     </div>
   </div>
 </main>

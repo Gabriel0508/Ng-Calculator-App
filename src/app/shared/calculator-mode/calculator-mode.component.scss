@@ -6,6 +6,12 @@
   align-items: center;
   border-radius: 15px;
 
+  .form-check-input {
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+
   .form-switch .form-check-input {
     background-color: $shadow;
     border: 1px solid $white;
